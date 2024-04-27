@@ -39,7 +39,7 @@ que me lo ha pedido.
 ![informe-hardware](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/248383c7-8f9b-4a87-8ef7-fd9ce4d51aeb)
 - Se ha añadido la posibilidad de ver el hardware del equipo (procesador, grafica, tarjetas de red, etc ...)
 ![comprobacion-dependencias](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/f83250c5-2bbf-4ff8-bc3e-75f6e42f9c66)
-- Para simplificar las cosas, al incio del programa se comprueba si la lista de dependencias que se muestra aquí debajo se cumple. Si no se cumple se procede a su instalación antes de intentar arrancar el programa.
+- Para simplificar las cosas, al incio del programa se comprueba si la lista de dependencias que se muestra aquí debajo se cumple. Si no se cumplen, se procede a su instalación antes de intentar arrancar el programa.
 ![equipos-red-local](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/acfa6f8b-5f9e-4fa3-b4ba-6351a8139c52)
 - Se ha añadido la localización de equipos en la misma red. Dentro del listado de equipos obtenidos, tendremos la posibilidad de abrir con nautilus, si los permisos y el firewall nos lo permiten. Para esto se utiliza el protocolo samba, por lo que es necesario que esté instalado en el equipo con el que queremos conectarnos. En el equipo en el que se ejecute este script se instalará samba como dependencia.
 
