@@ -14,14 +14,14 @@ que me lo ha pedido.
 ### Acciones disponibles por el momento
 
 ![actualizar-sistema](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/f4e551ae-7dd7-44bf-8c2b-76c69938c745)
-- Actualizar paquetes
-- Instalación desde gestor de software
-- Limpiar caché del sistema
-![administrar-repositorios](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/c17dfbdb-2ad7-47f2-8037-b4251d30083a)
+- Actualizar paquetes.
+- Instalación desde gestor de software.
+- Limpiar caché del sistema.
+![administrar-repos](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/1f6d0a02-cbec-4985-81e3-3a4e4b5319f2)
 - Añadida una opción para trabajar con los repositorios instalados en el sistema (eliminar/editar). Además de darnos la posibilidad de añadir repositorios. Todos los cambios se harán en el archivo source.list, pero se hará una copia de seguridad antes de realizar algún cambio en el archivo. La ubicación de la copia de seguridad será /etc/apt/sources.list.bak (en proceso de mejora. ¡Utilizar con cuidado por lo que pueda pasar!)
 ![reiniciar-tarjeta-de-red](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/58147f74-1cb3-4b0e-bc27-32969ccee1c9)
 - Añadida la posibilidad de reiniciar la tarjeta de red que se seleccione en el desplegable.
-- Menú Archivo y about
+- Menú Archivo y about.
 ![password-usuario](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/e20f6bec-01cc-4ee0-883e-3d0bd2caf1a8)
 - Añadida la capacidad de almacenar de forma cifrada la contraseña del usuario, para solo tener que escribirla una única vez.
 - Se ha creado una clase para los comandos que se lancen. Y un módulo para los elementos de menú que se vayan creando.
