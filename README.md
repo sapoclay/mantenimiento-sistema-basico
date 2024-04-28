@@ -70,3 +70,5 @@ Estas dependencias las comprobará e instalará el programa una vez se ejecute s
   ``` sudo dpkg -i mantenimientobasico.deb ```
 
 Tras la instalación deberías poder ver ya el lanzador del programa en el menú de Actividades.
+
+![lanzador](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/1b0a026c-5cd9-4bc1-aca0-f9e2787d9d27)
