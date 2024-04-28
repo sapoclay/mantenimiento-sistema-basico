@@ -12,7 +12,7 @@
 - Actualizar paquetes del sistema.
 - Instalación desde gestor de software (tienda snap).
 - Limpiar caché del sistema.
-![repositorios](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/b2482aac-603c-4847-9547-2b1ea67a620e)
+![repositorios](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/61d46859-7c52-43bb-b1ee-28006e825769)
 - Opción para trabajar con los repositorios instalados en el sistema (eliminar/editar/añadir). Todos los cambios se harán en el archivo source.list, pero se hará una copia de seguridad antes de realizar algún cambio en el archivo. La ubicación de la copia de seguridad será /etc/apt/sources.list.bak (esto todavía está en proceso por lo que puede fallar o no hacer lo que se espera)
 ![reiniciar-tarjeta-red](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/0b46dd7a-c9bd-4fff-afd9-6250f444d8c7)
 - Reiniciar tarjetas de red.
