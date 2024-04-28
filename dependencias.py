@@ -11,6 +11,8 @@ DEPENDENCIAS = {
     "python3-tk": ["sudo", "apt", "install", "-y", "python3-tk"],
     "net-tools": ["sudo", "apt", "install", "-y", "net-tools"],
     "ethtool": ["sudo", "apt", "install", "-y", "ethtool"],
+    "python3-pyqt5": ["sudo", "apt", "install", "-y", "python3-pyqt5"],
+    "gnome-terminal": ["sudo", "apt", "install", "-y", "gnome-terminal"],
     "matplotlib": ["pip3", "install", "matplotlib"],
     "pillow": ["pip3", "install", "--upgrade", "pillow"],
     "cryptography": ["pip3", "install", "cryptography"],

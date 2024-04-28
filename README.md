@@ -42,6 +42,8 @@ Estas dependencias las comprobará e instalará el programa una vez se ejecute s
 - nmap -> sudo apt install python3-nmap
 - Tkinter -> sudo apt install python3-tk
 - Net-tools -> sudo apt install net-tools
+- Pyqt5 -> sudo apt install python3-pyqt5
+- Gnome-terminal -> sudo apt install gnome-terminal
 - Matplotlib -> pip3 install matplotlib
 - Pillow -> pip3 install --upgrade pillow
 - Cryptography -> pip3 install cryptography

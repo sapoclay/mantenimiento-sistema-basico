@@ -116,6 +116,3 @@ def cargar_contenido_html():
     contenido_html = markdown2.markdown(contenido_md)
     return contenido_html
 
-if __name__ == "__main__":
-    contenido_html = cargar_contenido_html()
-    abrir_ventana_diccionario(contenido_html)
