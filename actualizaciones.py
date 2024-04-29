@@ -37,7 +37,8 @@ def mostrar_ventana_actualizaciones():
     ventana_actualizaciones = tk.Toplevel()
     ventana_actualizaciones.title("Buscar Actualizaciones")
     ventana_actualizaciones.geometry("500x200")  # Tamaño personalizado
-
+    ventana_actualizaciones.resizable(False, False)
+    
     # Etiqueta para mostrar la versión instalada
     version_instalada_label = tk.Label(ventana_actualizaciones, text="Versión instalada:")
     version_instalada_label.pack()
