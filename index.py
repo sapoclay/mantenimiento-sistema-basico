@@ -49,6 +49,7 @@ import password
 from password import solicitar_contrasena_y_ejecutar
 from redlocal import mostrar_dispositivos_en_ventana
 
+
 # Llamar a la función obtener_contrasena() para solicitar la contraseña al usuario al iniciar el programa
 password.obtener_contrasena()
 
@@ -231,7 +232,12 @@ def salir():
     password.limpiar_archivos_configuracion()
     sys.exit()
     
-
+# Función para abrir la ventana de actualizaciones
+def abrir_ventana_actualizaciones():
+    # Importar el módulo actualizaciones.py
+    import actualizaciones
+    # Llamar a la función para mostrar la ventana de actualizaciones
+    actualizaciones.mostrar_ventana_actualizaciones()
 
 # --------------------------------------------------------- #
 # Crear la ventana principal
@@ -260,6 +266,12 @@ papelera_menu.add_command(label="Vaciar Papelera", command=ComandosSistema.vacia
 # Agregar el menú Papelera como una cascada en el menú principal
 menubar.add_cascade(label="Papelera", menu=papelera_menu)
 
+# Crear el menú Preferencias
+preferencias_menu = tk.Menu(menubar, tearoff=0)
+preferencias_menu.add_command(label="Buscar Actualizaciones", command=abrir_ventana_actualizaciones)
+
+# Agregar el menú Preferencias como una cascada en el menú principal
+menubar.add_cascade(label="Preferencias", menu=preferencias_menu)
 
 # Opción "About" fuera del menú "Archivo"
 menubar.add_command(label="About", command=mostrar_about)  # Llama a mostrar_about cuando se haga clic

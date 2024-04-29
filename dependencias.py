@@ -21,7 +21,8 @@ DEPENDENCIAS = {
     "pyqt5": ["pip3", "install", "PyQt5"],
     "speedtest-cli": ["pip3", "install", "speedtest-cli"],
     "tabulate": ["pip3", "install", "tabulate"],
-    "opencv-python-headless": ["pip3", "install", "opencv-python-headless"]
+    "opencv-python-headless": ["pip3", "install", "opencv-python-headless"],
+    "wget": ["pip3", "install", "wget"]
 }
 
 

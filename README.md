@@ -4,7 +4,7 @@
 ![about](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/24750aa9-a9ff-4381-b8f0-d5200a6417b4)
 * Sistema de mantenimiento básico y otras cosas para Ubuntu. 
 * Creado con Python 3.
-* Versión actual del programa: 0.5
+* Versión actual del programa: 0.5.1
 ------------------------------------------------------------------
 ### Cosas que puede ir haciendo 
 ------------------------------------------------------------------
@@ -34,7 +34,11 @@
 - Para simplificar las cosas, al incio del programa se comprueba si la lista de dependencias que se muestra aquí debajo se cumple. Si no se cumple se procede a su instalación antes de intentar arrancar el programa.
 ![iplocales](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/c5e8cc72-83d3-4dd6-a2dc-fd08f299cfce)
 - Se ha añadido la localización de equipos en la misma red. Dentro del listado de equipos obtenidos, tendremos la posibilidad de abrir con nautilus, si los permisos y el firewall lo permiten. Para esto se utiliza el protocolo samba, por lo que es necesario que esté instalado en el equipo con el que queremos conectarnos. En el equipo en el que se ejecute este script se instalará samba como dependencia.
+
+## Actualización Versión 0.5.1
+
 - Añadidas al menú principal las opciones de eliminar archivos o vaciar la papelera de reciclaje.
+- Añadida al menú principal la opción Buscar actualizaciones.
 
 ## Dependencias Imprescindibles 
 
@@ -63,6 +67,7 @@ Estas dependencias las comprobará e instalará el programa una vez se ejecute s
 - speedtest-cli -> pip3 install speedtest-cli
 - tabulate -> pip3 install tabulate
 - opencv-python-headless -> pip3 install opencv-python-headless
+- wget -> pip3 install wget
 
 ## Instalación del paquete .DEB
 
@@ -80,6 +85,3 @@ Tras la instalación deberías poder ver ya el lanzador del programa en el menú
 
 ``` sudo apt remove mantenimientobasico ```
 
-## Próximamente
-
-- Actualizaciones automáticas del programa
