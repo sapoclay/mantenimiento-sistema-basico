@@ -3,7 +3,7 @@
 ------------------------------------------------------------------
 ![about](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/24750aa9-a9ff-4381-b8f0-d5200a6417b4)
 * Sistema de mantenimiento básico y otras cosas para Ubuntu. 
-* Creado con Python 3.
+* Creado con Python 3.10.12
 * Versión actual del programa: 0.5.1
 ------------------------------------------------------------------
 ### Cosas que puede ir haciendo 
@@ -44,7 +44,7 @@
 
 Dependencias necesarias para poder ejecutar el programa. Estas dependencias deben instalarse manualmente.
 
-- Python3 -> sudo apt install python3.10 
+- Python3 -> sudo apt install python3.10
 - pip3 -> sudo apt install python3-pip
 
 ## Dependencias instalables
