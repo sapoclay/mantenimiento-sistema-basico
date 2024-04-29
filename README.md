@@ -34,6 +34,7 @@
 - Para simplificar las cosas, al incio del programa se comprueba si la lista de dependencias que se muestra aquí debajo se cumple. Si no se cumple se procede a su instalación antes de intentar arrancar el programa.
 ![iplocales](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/c5e8cc72-83d3-4dd6-a2dc-fd08f299cfce)
 - Se ha añadido la localización de equipos en la misma red. Dentro del listado de equipos obtenidos, tendremos la posibilidad de abrir con nautilus, si los permisos y el firewall lo permiten. Para esto se utiliza el protocolo samba, por lo que es necesario que esté instalado en el equipo con el que queremos conectarnos. En el equipo en el que se ejecute este script se instalará samba como dependencia.
+- Añadidas al menú principal las opciones de eliminar archivos o vaciar la papelera de reciclaje.
 
 ## Dependencias Imprescindibles 
 
@@ -72,3 +73,13 @@ Estas dependencias las comprobará e instalará el programa una vez se ejecute s
 Tras la instalación deberías poder ver ya el lanzador del programa en el menú de Actividades.
 
 ![lanzador](https://github.com/sapoclay/mantenimiento-sistema-basico/assets/6242827/1b0a026c-5cd9-4bc1-aca0-f9e2787d9d27)
+
+## Desinstalación
+
+- En una terminal (Ctrl+Alt+T):
+
+``` sudo apt remove mantenimientobasico ```
+
+## Próximamente
+
+- Actualizaciones automáticas del programa

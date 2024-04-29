@@ -230,6 +230,8 @@ def abrir_diccionario():
 def salir():
     password.limpiar_archivos_configuracion()
     sys.exit()
+    
+
 
 # --------------------------------------------------------- #
 # Crear la ventana principal
@@ -249,6 +251,15 @@ archivo_menu.add_command(label="Abrir Diccionario", command=abrir_diccionario)
 archivo_menu.add_separator()
 archivo_menu.add_command(label="Salir", command=salir)
 menubar.add_cascade(label="Archivo", menu=archivo_menu)
+
+# Crear el menú Papelera
+papelera_menu = tk.Menu(menubar, tearoff=0)
+papelera_menu.add_command(label="Eliminar Archivo", command=ComandosSistema.eliminar_archivo)
+papelera_menu.add_command(label="Vaciar Papelera", command=ComandosSistema.vaciar_papelera)
+
+# Agregar el menú Papelera como una cascada en el menú principal
+menubar.add_cascade(label="Papelera", menu=papelera_menu)
+
 
 # Opción "About" fuera del menú "Archivo"
 menubar.add_command(label="About", command=mostrar_about)  # Llama a mostrar_about cuando se haga clic

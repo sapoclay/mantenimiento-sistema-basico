@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-#from tkinter import simpledialog
 import subprocess
 import repositorios
 import netifaces
@@ -13,13 +12,12 @@ import platform
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import psutil
-#from datetime import datetime
 import tkinter as tk
 import subprocess
 import re
 from password import obtener_contrasena
 import shutil
-
+from tkinter import filedialog
 
 class ComandosSistema:
     @staticmethod
@@ -460,3 +458,31 @@ class ComandosSistema:
 
         return info_memoria
     
+    @staticmethod
+    def eliminar_archivo():
+        try:
+            archivos = filedialog.askopenfilenames(title="Seleccionar archivo(s) para eliminar", filetypes=(("Todos los archivos", "*.*"),))
+            
+            if archivos:
+                confirmacion = messagebox.askyesno("Confirmar eliminación", "¿Estás seguro de que quieres eliminar el archivo o los archivos seleccionados?")
+                if confirmacion:
+                    for archivo in archivos:
+                        os.remove(archivo)
+                    messagebox.showinfo("Éxito", "Los archivos seleccionados se han eliminado correctamente.")
+            else:
+                messagebox.showwarning("Advertencia", "No se seleccionaron archivos para eliminar.")
+        except Exception as e:
+            messagebox.showerror("Error", f"No se pudieron eliminar los archivos seleccionados. Error: {e}")
+
+    
+    @staticmethod
+    def vaciar_papelera():
+        try:
+            confirmacion = messagebox.askyesno("Confirmar vaciado", "¿Estás seguro de que quieres vaciar la papelera de reciclaje?")
+            if confirmacion:
+                os.system("gio trash --empty")
+                messagebox.showinfo("Éxito", "La papelera de reciclaje se ha vaciado correctamente.")
+        except Exception as e:
+            messagebox.showerror("Error", f"No se pudo vaciar la papelera de reciclaje. Error: {e}")
+
+        
